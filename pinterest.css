@@ -1,0 +1,263 @@
+* {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+
+header{
+    background-color: white;
+    position: fixed;
+    top:0px;
+    width:100%
+
+    }
+
+.nav{
+
+        background-color: white;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+
+.p{
+    height:30px;
+    width: auto;
+}
+
+
+.p1 , .campana, .mensaje{
+    height:50px;
+    width: 50px;  
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    margin-left:6px;
+
+}
+
+.p1:hover , .campana:hover , .mensaje:hover {
+    background-color:#ccc;
+    border-radius: 50px;
+    cursor:pointer;
+    margin-left:6px;
+}
+
+.busqueda{
+    width:auto;
+    height:45px;
+    display: 1 1 auto;
+    flex-grow:1 ;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-content: center;
+    justify-content: center;
+    margin-left: 5px;
+    border-radius: 50px;
+    background-color:#efefef;
+    color:gray;
+    padding-left:50px;
+    border:0px;
+    margin:0px;
+    }
+
+.busqueda:hover{
+    cursor:text;
+    background-color:#ccc;
+    padding-left:50px;
+    position:relative;
+    }
+
+
+
+    .lupa{
+    height:20px;
+    width:20px;
+    border:50px white;
+    background-image:"lupa.png";
+    border-radius: 50px;
+    position:relative;
+    left:40px;
+    z-index:1;
+    background-image: "lupa.png";
+}
+
+.lupa:hover{
+    background-color:transparent
+
+    }
+
+.b-inicio{
+    background-color:white;
+    font-style: verdana;
+    border: 20px black;
+    color:white;
+    padding:10px;
+    border-radius: 50px;
+    cursor:pointer;
+    margin:0px;
+    font-weight:bold
+    }
+
+
+.b-hoy{
+    background-color:white;
+    font-style: verdana;
+    border: 20px;
+    color:black;
+    padding:10px;
+    border-radius: 50px;
+    cursor:pointer;
+    margin-left:5px;
+    font-weight:bold
+    }
+
+.b-hoy:hover{
+    background-color:#ccc
+}
+
+.usuario{
+    justify-content: center;
+    align-content: center;
+    margin-left:6px;
+    border-radius: 30px;
+    padding:10px
+}
+
+.usuario:hover{
+    background-color:#ccc;
+    border-radius: 150px;
+    cursor:pointer;
+    margin-left:6px;
+}
+
+
+.foto{
+    border-radius: 90px; 
+}
+
+
+.flecha{
+    margin-left:6px;
+
+}
+
+.flecha:hover {
+    background-color:#ccc;
+    border-radius: 50px;
+    cursor:pointer;
+    margin-left:6px;
+
+}
+
+main{
+    width:1300px;
+    height:3000px;
+    position:relative;
+  
+}
+
+.grid-container{
+    display: flex;
+    margin:70px 50px 10px 50px;
+    grid-gap:20px 20px;
+    column-count:5
+        }
+
+.col-1{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    object-fit: cover;
+    text-align: center;
+    height:auto;
+    width: 100%;
+}
+
+/* No cambiar. Código de imagen correcto */
+.img-g { 
+    margin:10px;
+    border-radius: 15px;
+    
+}
+
+.img-g:hover{
+    cursor:zoom-in
+}
+
+
+.cruz-icon{
+     height:50px;
+     width:50px;
+     position:fixed;
+     top:520px;
+     left:1270px;
+     align-items: center;
+     justify-content: center;
+     border-radius:50px;
+     box-shadow:whitesmoke;
+     box-shadow:2px 2px 8px #ccc;
+     background-color: white;
+     cursor:pointer;
+     }
+
+.cruz{
+        padding:8px;
+        justify-content: center;
+        align-content: center;
+        text-align:center;
+    }
+
+    .pregunta-icon {
+        height:50px;
+        width:50px;
+        position:fixed;
+        top:590px;
+        left:1270px;
+        align-items: center;
+        justify-content: center;
+        box-shadow:whitesmoke;
+        box-shadow:2px 2px 8px #ccc;
+        cursor:pointer;
+        border-radius:50px;
+        background-color: white;
+
+    }
+
+    .pregunta{
+        padding:8px;
+        justify-content: center;
+        align-content: center;
+        text-align:center
+    }
+
+.cruz-icon:hover , .pregunta-icon:hover{
+cursor:pointer;
+background-color: #ccc;
+}
+
+    /* .col-t1{ */
+        /* text-align:center;
+        font-weight: bold;
+        height: 80px;
+        width:40px;
+        padding:15px;
+        object-fit: contain;
+        } */
+    
+@media (max-width:650px) {
+        .busqueda{
+            visibility: hidden;
+            width:0%
+        }
+
+        header{
+            display: :flex;
+            flex-wrap: wrap;
+        }     
+
+    }
+
